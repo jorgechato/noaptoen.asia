@@ -97,13 +97,13 @@ h2 {
   margin: 2em auto;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 950px) {
   .video {
-    width: 80%;
+    width: 70%;
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1280px) {
   .video {
     width: 60%;
   }
