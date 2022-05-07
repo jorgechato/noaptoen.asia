@@ -34,6 +34,7 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@use "sass:math";
 
 $transition: .45s;
 $width: 98px;
@@ -85,7 +86,7 @@ $authorColor: rgba(white,.6);
 
   .tile:hover {
     transform: scale(1.2);
-    transition-duration: $transition/1.1;
+    transition-duration: math.div($transition, 1.1);
 
     .tile__details {
       opacity: 1;

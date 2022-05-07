@@ -1,11 +1,13 @@
 <template>
   <div class="social">
+    <span class="limit">{</span>
 
-    <a href="//jorgechato.com"><fa :icon="['fas', 'stream']" /></a>
-    <a href="//gumroad.com/l/twitch-lightroom-presets-donde-esta-jorge"><fa :icon="['fas', 'shopping-cart']" /></a>
-    <a href="//open.spotify.com/show/6HPGljWQbxmnxqhWNNMUpX"><fa :icon="['fab', 'spotify']" /></a>
-    <a href="//www.instagram.com/whereisjorge.today"><fa :icon="['fab', 'instagram']" /></a>
+    <a href="//youtube.jorgechato.com"><fa :icon="['fab', 'youtube']" /></a>
+    <a href="//podcast.jorgechato.com"><fa :icon="['fab', 'spotify']" /></a>
+    <a href="//instagram.jorgechato.com"><fa :icon="['fab', 'instagram']" /></a>
+    <a href="//twitter.jorgechato.com"><fa :icon="['fab', 'twitter']" /></a>
 
+    <span class="limit">}</span>
   </div>
 </template>
 
@@ -18,10 +20,12 @@ export default {
 <style lang="scss" scoped>
 $youtube: #ff0000;
 $spotify: #1db954;
-$stream: white;
+$podcast: #1db954;
+$stream: #6441a5;
 $instagram: #c13584;
+$twitter: #1DA1F2;
 $shopping-cart: #034EA2;
-$color: rgba(white, .3);
+$color: rgba(#111, .1);
 
 
 .svg-inline--fa{
@@ -29,6 +33,10 @@ $color: rgba(white, .3);
   padding: 0 .2em;
   text-decoration: none;
   color: $color;
+}
+
+.fa-twitter:hover{
+  color: $twitter;
 }
 
 .fa-youtube:hover{
@@ -39,7 +47,7 @@ $color: rgba(white, .3);
   color: $shopping-cart;
 }
 
-.fa-spotify:hover{
+.fa-spotify:hover, .fa-podcast:hover{
   color: $spotify;
 }
 
@@ -50,5 +58,10 @@ $color: rgba(white, .3);
 .fa-instagram:hover{
   color: $instagram;
 }
+
+  .limit{
+    font-size: 3em;
+    color: $color;
+  }
 </style>
 

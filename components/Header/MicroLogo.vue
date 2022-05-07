@@ -1,25 +1,9 @@
 <template>
-  <nuxt-link :to="'/'" class="logo__min">
 
-    <div class="logo__top">
-    J<span class="circle"></span>RGE
-    </div>
-
-    <div class="logo__bottom front">
-    CH
-    </div>
-
-    <div class="logo__bottom">
         <div class="card"
           :style="{ backgroundImage: 'url(' + thumbnail + ')' }">
         </div>
-    </div>
 
-    <div class="logo__bottom front">
-    T<span class="circle"></span>
-    </div>
-
-  </nuxt-link>
 </template>
 
 <script>
@@ -40,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$mainColor: #111;
+$mainColor: white;
 
 
 .card {
@@ -54,13 +38,13 @@ $mainColor: #111;
   background-position: center;
   background-size: cover;
   z-index: -1;
-  margin: .6em -.45em;
+  margin: 10px -35px;
 }
 
 .card:after{
   content: ' ';
   border-style: solid;
-  border-width: 0 .45em 1.2em .45em;
+  border-width: 0 .455em 1.2em .45em;
   border-color: $mainColor $mainColor transparent $mainColor;
   position: absolute;
   width: .5em;

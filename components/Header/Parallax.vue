@@ -9,10 +9,6 @@
         <div class="card"
           :style="cardStyle">
           <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
-          <div class="card-info">
-            <slot name="header"></slot>
-            <slot name="content"></slot>
-          </div>
         </div>
       </div>
 
@@ -85,7 +81,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$mainColor: #111;
+/*$mainColor: #111;*/
+$mainColor: white;
 $hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
 $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
@@ -148,7 +145,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   flex: 0 0 240px;
   width: 1.4em;
   height: 1.2em;
-  background-color: #333;
+  background-color: rgba(#333,.9);
   overflow: hidden;
   transition: 1s $returnEasing;
 }
@@ -156,7 +153,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 .card:after{
   content: ' ';
   border-style: solid;
-  border-width: 0 .45em 1.2em .45em;
+  border-width: 0 .455em 1.2em .455em;
   border-color: $mainColor $mainColor transparent $mainColor;
   position: absolute;
   width: .5em;

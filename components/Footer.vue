@@ -1,14 +1,10 @@
 <template>
   <div class="footer__net">
 
-    <span class="limit">{</span>
-
     <Social />
 
-    <span class="limit">}</span>
-
     <div class="by">
-      with <a href="//github.com/jorgechato/whereisjorge.today"><fa :icon="['fas', 'heart']" /></a> by Jorge Chato
+      con <a href="//github.com/jorgechato/noaptoen.asia"><fa :icon="['fas', 'heart']" /></a> por Jorge Chato
     </div>
 
   </div>
@@ -25,7 +21,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$color: rgba(white, .3);
+$textColor: #111;
+$color: rgba($textColor, .15);
 
 
 .footer__net{
@@ -35,11 +32,11 @@ $color: rgba(white, .3);
 
   .by{
     padding-top: 2em;
-    color: rgba(white, .1);
+    color: rgba($textColor, .1);
 
     .fa-heart {
       font-size: inherit;
-      color: rgba(white, .1);
+      color: rgba($textColor, .1);
 
       &:hover {
         font-size: inherit;
@@ -48,10 +45,6 @@ $color: rgba(white, .3);
     }
   }
 
-  .limit{
-    font-size: 3em;
-    color: $color;
-  }
 }
 
 .limit, .social {

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "futura-bold";
-  src: url("~assets/fonts/futura-bold.ttf") format("truetype");
+  src: url("~assets/fonts/futura-bold-new.ttf") format("truetype");
   font-style: bold;
   font-weight: bold;
 }
@@ -12,11 +12,13 @@
   font-weight: normal;
 }
 
-$mainColor: #111;
-$headerColor: rgba(white,.7);
+/*$mainColor: #111;*/
+$textColor: #111;
+$mainColor: white;
+$headerColor: #333;
 
 body {
-  color: white;
+  color: $textColor;
   font-family: "futura";
   background: $mainColor;
   text-align: center;
@@ -24,14 +26,16 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: $textColor;
   transition: .3s color;
 }
 
+/*
 a:hover {
-  color: rgba(white, .7);
+  color: rgba($textColor, .9);
   transition: .3s color;
 }
+*/
 
 h3, h4 {
   color: $headerColor;

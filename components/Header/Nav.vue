@@ -27,7 +27,8 @@ export default {
   props: {
     thumbnail: {
       type: String,
-      required: true,
+      required: false,
+      default: "/tokyo.png"
     },
   },
   data() {

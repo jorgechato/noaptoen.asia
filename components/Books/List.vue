@@ -1,7 +1,7 @@
 <template>
-  <section>
+  <section class="books-section">
 
-    <h4>Recommended reading</h4>
+    <h4>Mis libros TOP</h4>
 
     <div class="slide">
       <div class="books">
@@ -41,6 +41,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.books-section {
+  margin-top: 3em;
 }
 
 </style>

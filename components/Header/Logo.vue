@@ -2,20 +2,23 @@
   <nuxt-link :to="'/'" class="logo">
 
     <div class="logo__top">
-    J<span class="circle"></span>RGE
+      <div class="small">NO</div>
+      APTO
     </div>
 
-    <div class="logo__bottom front">
-    CH
-    </div>
+    <div class="logo__mid small">EN</div>
 
-    <Parallax :thumbnail="thumbnail" class="logo__bottom">
-    <p slot="content">{{ country | capitalize }}</p>
+    <Parallax
+      thumbnail="/japan.png"
+      class="logo__bottom">
     </Parallax>
 
-    <div class="logo__bottom front">
-    T<span class="circle"></span>
-    </div>
+    <div class="logo__bottom front">SI</div>
+
+    <Parallax
+      thumbnail="/seoul.png"
+      class="logo__bottom">
+    </Parallax>
 
   </nuxt-link>
 </template>
@@ -28,16 +31,25 @@ export default {
   props: {
     country: {
       type: String,
-      required: true,
+      required: false,
     },
     thumbnail: {
       type: String,
-      required: true,
+      required: false,
     },
   },
   components: {
     Parallax,
   },
+  methods: {
+    isMobile() {
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return true
+      } else {
+        return false
+      }
+    }
+  }
 }
 </script>
 
@@ -50,7 +62,6 @@ export default {
   font-size: 5em;
   display: block;
   text-decoration: none;
-  color: white;
   max-width: 400px;
   width: 100%;
 
@@ -70,13 +81,22 @@ export default {
   }
 
   .logo__top {
-    font-size: 1.1em;
     margin-bottom: -15px;
+    .small {
+      font-size: .7em;
+      margin-bottom: -15px;
+    }
   }
 
   .logo__bottom {
     vertical-align: middle;
     display: inline-block;
+    font-size: 1.2em;
+  }
+
+  .logo__mid {
+    font-size: .4em;
+    margin-bottom: -15px;
   }
 
   .front {

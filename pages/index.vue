@@ -1,30 +1,46 @@
 <template>
   <div>
 
-    <nav-bar
-      :thumbnail="location.current.thumbnail"/>
+    <my-logo/>
 
-      <my-logo
-        :thumbnail="location.current.thumbnail"
-        :country="location.current.country"/>
+      <h2>El podcast</h2>
 
-        <div class="location-txt">
+      <div class="txt">
+        <p>
+          Bienvenido a "No apto en Asia", el podcast de Jorge Chato.</br>
+          Actualidad, anécdotas, curiosidades, debates en Japón, Corea, Tailandia...</br>
+          Todas las semanas relato mi descenso a la cultura Asiática, sus costumbres y demonios.
+        </p>
 
-          <h3>is currently in</h3>
-          <h2>
-            <a
-              target="_blank"
-              :href="'//www.google.com/maps/@'+location.current.lat+','+location.current.lon+',13z'">
-              {{ location.current.city }}
-            </a>
-          </h2>
-        </div>
+        <p>
+          He vivido en Corea en plena pandemia y ahora me encuentro en Japón.</br>
+          Experimentando, desde la curiosidad, todo lo que me puede dar.</br>
+          ¡Acompáñame y descubramos esto juntos!
+        </p>
+      </div>
 
-        <next-locations
-          :locations="location.next"/>
+    <social />
 
-          <book-list
-            :books="books"/>
+      <div>
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/videoseries?list=PL6pncPUmit7yWNr_a60flHY2CwB60uvsE"
+          frameborder="0">
+        </iframe>
+      </div>
+
+      <div>
+        <iframe
+          frameborder="0"
+          height="450"
+          style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+          src="https://embed.podcasts.apple.com/us/podcast/no-apto-en-asia/id1501968108">
+        </iframe>
+      </div>
+
+      <book-list :books="books"/>
+
   </div>
 </template>
 
@@ -33,46 +49,63 @@ import Nav from '~/components/Header/Nav'
 import Logo from '~/components/Header/Logo'
 import Next from '~/components/Location/Next'
 import BookList from '~/components/Books/List'
+import Social from '~/components/Social'
+
+import books from '~/static/books.json'
 
 
 export default {
   components: {
     'nav-bar': Nav,
     'my-logo': Logo,
-    'next-locations': Next,
     'book-list': BookList,
+    'social': Social,
   },
   async asyncData({ $axios }) {
-    const currentLocation = await $axios.get('/location/current');
-    const nextLocation = await $axios.get('/location/next')
-      .catch(err => { return [] });
-    const books = await $axios.get('/books', {
-      params: { score: 5 }
-    })
-      .catch(err => { return [] });
-
     return {
-      location: {
-        current: currentLocation.data,
-        next: nextLocation.data,
-      },
-      books: books.data,
+      books: books,
     }
   }
 }
 </script>
 
 <style lang="scss" scope>
+h2 {
+  margin-bottom: 2em;
+}
+
+.txt {
+  margin: 0 8px;
+}
+
 .location-txt {
   h2 {
+
     a {
       transition: all .1s ease-in-out;
 
       &:hover {
-        color: white;
         font-size: 1.05em;
       }
     }
+  }
+}
+
+.video {
+  aspect-ratio: 16/9;
+  width: 100%;
+  margin: 2em auto;
+}
+
+@media (min-width: 720px) {
+  .video {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1080px) {
+  .video {
+    width: 60%;
   }
 }
 </style>
