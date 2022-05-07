@@ -1,24 +1,24 @@
 export default {
-  mode: 'spa',
+  ssr: false,
   /*
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.TITLE || process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap' }
     ]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#7D1128' },
+  loading: { color: '#00A36C' },
   /*
    ** Global CSS
    */
@@ -54,6 +54,7 @@ export default {
               'faHeart',
               'faCheck',
               'faStream',
+              'faPodcast',
               'faShoppingCart',
             ]
           },
@@ -70,6 +71,7 @@ export default {
               'faYoutube',
               'faSpotify',
               'faItunes',
+              'faTwitter',
               'faInstagram',
             ]
           }

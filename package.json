@@ -1,7 +1,7 @@
 {
-  "name": "whereisjorge.today",
-  "version": "2.0.1",
-  "description": "If you want to know where I am, upcoming events I plan to assist, time zone and much more, this is your page.",
+  "name": "noaptoen.asia",
+  "version": "2.1.0",
+  "description": "El podcast de un maño en Asia; No apto en Asia. Donde relato mi experiencia y documento mis experiencias habiendo vivido en Korea y Japón.",
   "author": "jorgechato",
   "private": true,
   "scripts": {
@@ -20,12 +20,13 @@
     "@nuxtjs/google-analytics": "^2.2.0",
     "marked": "^4.0.10",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.14.12",
+    "nuxt": "^2.13.3",
     "nuxt-fontawesome": "^0.4.0"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.1",
     "push-dir": "^0.4.1",
-    "sass-loader": "^9.0.3"
+    "sass": "^1.51.0",
+    "sass-loader": "^10.1.1"
   }
 }
