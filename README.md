@@ -1,10 +1,8 @@
-# Where am I today?
-[![Build Status](https://travis-ci.org/jorgechato/whereisjorge.today.svg?branch=master)](https://travis-ci.org/jorgechato/whereisjorge.today)
-[![whereisjorge.today](https://img.shields.io/badge/whereisjorge-today-orange.svg)](https://whereisjorge.today)
+# No apto en Asia, the podcast webpage
 
-`Vue.js` + `Nuxt.js` application displaying frontend information from [Jorge Chato api](https://api.jorgechato.com/).
+`Vue.js` + `Nuxt.js` application displaying the landing page for [No apto en Asia](https://youtube.jorgechato.com/).
 
-> whereisjorge.today frontend
+> noaptoen.asia frontend
 
 ## Build Setup
 
