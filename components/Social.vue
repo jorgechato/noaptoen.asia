@@ -2,10 +2,10 @@
   <div class="social">
     <span class="limit">{</span>
 
-    <a href="//youtube.jorgechato.com"><fa :icon="['fab', 'youtube']" /></a>
-    <a href="//podcast.jorgechato.com"><fa :icon="['fab', 'spotify']" /></a>
-    <a href="//instagram.jorgechato.com"><fa :icon="['fab', 'instagram']" /></a>
-    <a href="//twitter.jorgechato.com"><fa :icon="['fab', 'twitter']" /></a>
+    <a href="http://youtube.jorgechato.com"><fa :icon="['fab', 'youtube']" /></a>
+    <a href="http://podcast.jorgechato.com"><fa :icon="['fab', 'spotify']" /></a>
+    <a href="http://instagram.jorgechato.com"><fa :icon="['fab', 'instagram']" /></a>
+    <a href="http://twitter.jorgechato.com"><fa :icon="['fab', 'twitter']" /></a>
 
     <span class="limit">}</span>
   </div>
