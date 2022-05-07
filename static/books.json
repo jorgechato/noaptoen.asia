@@ -1,0 +1,72 @@
+[
+  {
+    "score": "5",
+    "book": {
+      "title": "Surely You're Joking, Mr. Feynman!",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1504936953l/35167685._SX98_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/35167685-surely-you-re-joking-mr-feynman",
+      "author_list": [
+        {
+          "name": "Richard P. Feynman"
+        }
+      ],
+      "isbn": "0393355624"
+    }
+  },
+  {
+    "score": "5",
+    "book": {
+      "title": "El temor de un hombre sabio",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1324863358l/13311064._SX98_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/13311064-el-temor-de-un-hombre-sabio",
+      "author_list": [
+        {
+          "name": "Patrick Rothfuss"
+        }
+      ],
+      "isbn": "6073105940"
+    }
+  },
+  {
+    "score": "5",
+    "book": {
+      "title": "The Art of War",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630683326l/10534._SX98_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/10534.The_Art_of_War",
+      "author_list": [
+        {
+          "name": "Sun Tzu"
+        }
+      ],
+      "isbn": ""
+    }
+  },
+  {
+    "score": "5",
+    "book": {
+      "title": "Dune",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1632494323l/59067660._SX98_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/59067660-dune",
+      "author_list": [
+        {
+          "name": "Frank Herbert"
+        }
+      ],
+      "isbn": ""
+    }
+  },
+  {
+    "score": "5",
+    "book": {
+      "title": "La Daga de la Ceguera",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1514692591l/17787592._SX98_.jpg",
+      "goodreads_url": "https://www.goodreads.com/book/show/17787592-la-daga-de-la-ceguera",
+      "author_list": [
+        {
+          "name": "Brent Weeks"
+        }
+      ],
+      "isbn": ""
+    }
+  }
+]
