@@ -14,7 +14,7 @@
 
         <p>
           He vivido en Corea en plena pandemia y ahora me encuentro en Japón.</br>
-          Experimentando, desde la curiosidad, todo lo que me puede dar.</br>
+          Explorando, desde la curiosidad, todo lo que puede ofrecer.</br>
           ¡Acompáñame y descubramos esto juntos!
         </p>
       </div>
@@ -35,7 +35,7 @@
           height="450"
           style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
           sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-          src="https://embed.podcasts.apple.com/us/podcast/no-apto-en-asia/id1501968108">
+          src="https://embed.podcasts.apple.com/us/podcast/no-apto-en-asia/id1623385435">
         </iframe>
       </div>
 
