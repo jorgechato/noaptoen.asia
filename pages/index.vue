@@ -31,11 +31,12 @@
 
       <div>
         <iframe
-          frameborder="0"
-          height="450"
-          style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
-          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-          src="https://embed.podcasts.apple.com/us/podcast/no-apto-en-asia/id1623385435">
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          width="95%"
+          style="border-radius:12px;max-width:660px;min-height:155px;"
+          frameBorder="0"
+          allowfullscreen=""
+          src="https://open.spotify.com/embed/show/7D9vcr6guIw20F4oIe6Dux?utm_source=generator&theme=0">
         </iframe>
       </div>
 
