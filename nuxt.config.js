@@ -24,7 +24,7 @@ export default {
    */
   css: [
     'normalize.css',
-    {src: "~assets/styles/base.scss", lang: 'scss'}
+    { src: "~assets/styles/base.scss", lang: 'scss' }
   ],
   /*
    ** Plugins to load before mounting the App
@@ -46,37 +46,37 @@ export default {
       id: 'UA-146816931-3',
     }],
     ['nuxt-fontawesome', {
-        component: 'fa',
-        imports: [
-          {
-            set: '@fortawesome/free-solid-svg-icons',
-            icons: [
-              'faHeart',
-              'faCheck',
-              'faStream',
-              'faPodcast',
-              'faShoppingCart',
-            ]
-          },
-          {
-            set: '@fortawesome/free-regular-svg-icons',
-            icons: [
-              'faCheckSquare',
-              'faSquare',
-            ]
-          },
-          {
-            set: '@fortawesome/free-brands-svg-icons',
-            icons: [
-              'faYoutube',
-              'faSpotify',
-              'faItunes',
-              'faTwitter',
-              'faInstagram',
-            ]
-          }
-        ]
-      }],
+      component: 'fa',
+      imports: [
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: [
+            'faHeart',
+            'faCheck',
+            'faStream',
+            'faPodcast',
+            'faShoppingCart',
+          ]
+        },
+        {
+          set: '@fortawesome/free-regular-svg-icons',
+          icons: [
+            'faCheckSquare',
+            'faSquare',
+          ]
+        },
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: [
+            'faYoutube',
+            'faSpotify',
+            'faItunes',
+            'faTwitter',
+            'faInstagram',
+          ]
+        }
+      ]
+    }],
   ],
   /*
    ** Build configuration
@@ -85,7 +85,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
   },
   /*
@@ -93,5 +93,5 @@ export default {
    */
   axios: {
     baseURL: process.env.BASE_URL || 'https://api.jorgechato.com/v2'
-  }
+  },
 }
